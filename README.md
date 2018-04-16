@@ -1,10 +1,14 @@
+# Fork
+
+This is published as `vuepress-html-webpack-plugin` to be used in VuePress. This is to fix a situation when the user installs a version of `html-webpack-plugin` that is compatible with VuePress' (which causes it to be hoisted to `node_modules` root) but also with a version of webpack that is incompatible. Because `html-webpack-plugin` directly make requires into webpack internals, it ends up requiring the internal modules from the incompatible version of webpack.
+
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
 ![npm](https://img.shields.io/npm/dw/html-webpack-plugin.svg)
 [![deps][deps]][deps-url]
 [![tests][tests]][tests-url]
 [![Backers on Open Collective](https://opencollective.com/html-webpack-plugin/backers/badge.svg)](#backers)
- [![Sponsors on Open Collective](https://opencollective.com/html-webpack-plugin/sponsors/badge.svg)](#sponsors) 
+ [![Sponsors on Open Collective](https://opencollective.com/html-webpack-plugin/sponsors/badge.svg)](#sponsors)
 
 <div align="center">
   <img width="200" height="200" src="https://worldvectorlogo.com/logos/html5.svg">
